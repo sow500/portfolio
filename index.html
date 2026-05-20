@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thin Saw Htoo | Structural Engineer</title>
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Professional portfolio and CV of Thin Saw Htoo, a Structural Engineer specializing in modern web applications, interactive user experiences, and robust architectures.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main stylesheet link -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Interactive Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- iOS-style Ambient Blur Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#hero" class="logo" id="logo-link">
+                <span class="logo-symbol">&lt;</span>
+                <span class="logo-text">Thin.S</span>
+                <span class="logo-symbol">/&gt;</span>
+            </a>
+            <nav class="nav" id="main-navigation">
+                <a href="#about" class="nav-link" id="nav-about">About</a>
+                <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
+                <a href="#experience" class="nav-link" id="nav-experience">Experience</a>
+                <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+                <a href="#contact" class="nav-link nav-btn" id="nav-contact">Contact</a>
+            </nav>
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-toggle" id="menu-toggle" aria-label="Toggle Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge">Available for Work</div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Thin Saw Htoo</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    My Aim is <span id="typing-text" class="typing-text"></span><span class="cursor">&nbsp;</span>
+                </h2>
+                <p class="hero-description">
+                    A passionate structural engineer focused on crafting visually stunning, high-performance, and user-centric building solutions with modern engineering practices.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#projects" class="btn btn-primary" id="hero-cta-projects">
+                        View My Work
+                        <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary" id="hero-cta-contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Premium Glass Card Profile -->
+                <div class="profile-card">
+                    <div class="profile-glow"></div>
+                    <div class="profile-inner">
+                        <div class="profile-avatar">
+                            <img src="photo_2026-05-21_00-51-04.jpg" alt="Thin Saw Htoo" style="width:100%; height:100%; object-fit:cover; border-radius:50%; transform: scale(1.3)">
+                        </div>
+                        <h3 class="profile-name">Thin Saw Htoo</h3>
+                        <p class="profile-title">Structural Engineer</p>
+                        <div class="profile-details">
+                            <div class="profile-detail-item">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <span>Bangkok, Thailand</span>
+                            </div>
+                            <div class="profile-detail-item">
+                                <svg class="detail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                </svg>
+                                <span>2+ Years Experience</span>
+                            </div>
+                        </div>
+                        <div class="profile-socials">
+                            <a href="https://github.com/sow500" target="_blank" aria-label="GitHub" class="social-icon-link">
+                                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/thin-saw-htoo-b68a9625b" target="_blank" aria-label="LinkedIn" class="social-icon-link">
+                                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                    <rect x="2" y="9" width="4" height="12"></rect>
+                                    <circle cx="4" cy="4" r="2"></circle>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/sowxsor?igsh=azVmd21oZnF3MjJw&utm_source=qr" target="_blank" aria-label="Instagram" class="social-icon-link">
+                                <svg class="social-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text-container glass-card">
+                    <p class="about-para">
+                        I am a structural engineer with a passion for designing and analyzing robust building structures. With a background in civil engineering, I specialize in creating safe, efficient, and sustainable construction solutions as well as earthquake-resistant designs. 
+                    </p>
+                    <p class="about-para">
+                        My approach is rooted in seismic design analysis and attention to detail, ensuring that every project meets the highest standards of quality and safety.  I'm staying updated on the latest industry trends, participating in professional development opportunities, or engaging with the engineering community.
+                    </p>
+                    <div class="quick-facts">
+                        <div class="fact-card">
+                            <div class="fact-icon-container">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 10v6M2 10v6M12 4v16M2 10l10-6 10 6-10 6-10-6z"></path>
+                                </svg>
+                            </div>
+                            <h4>Education</h4>
+                            <p>B.E.Civil, Technological University (Toungoo) (2016-2023)</p>
+                            <p>M.E.Civil, Chulalongkorn University (2024-Present)</p>
+                        </div>
+                        <div class="fact-card">
+                            <div class="fact-icon-container">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                    <polyline points="2 17 12 22 22 17"></polyline>
+                                    <polyline points="2 12 12 17 22 12"></polyline>
+                                </svg>
+                            </div>
+                            <h4>Key Areas</h4>
+                            <p>Structural Analysis, Design, Dynamic & Earthquake Engineering, Construction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-status-container">
+                    <div class="status-card glass-card">
+                        <h3>Current Focus</h3>
+                        <ul class="focus-list">
+                            <li>
+                                <span class="focus-bullet"></span>
+                                <div>
+                                    <strong>Computational Design & Automation</strong>
+                                    <p>Building high-performance parametric workflows with advanced digital architectures.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="focus-bullet"></span>
+                                <div>
+                                    <strong>Seismic Hazard & Ground Motion Modeling</strong>
+                                    <p>Implementing advanced GMPE frameworks for PSHA and site-specific risk assessment.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="focus-bullet"></span>
+                                <div>
+                                    <strong>Advanced Dynamics & Vibration Control</strong>
+                                    <p>Designing high-performance seismic isolation and advanced structural mitigation systems.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="focus-bullet"></span>
+                                <div>
+                                    <strong>Resilient & Sustainable Engineering</strong>
+                                    <p>Creating low-carbon structural systems and advanced material simulations.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="focus-bullet"></span>
+                                <div>
+                                    <strong>Digital Twins & Smart Infrastructure</strong>
+                                    <p>Deploying structural health monitoring and IoT-driven predictive models.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <!-- Programming Glass Card -->
+                <div class="skills-category-card glass-card">
+                    <div class="category-header">
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"></polyline>
+                            <polyline points="8 6 2 12 8 18"></polyline>
+                        </svg>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Html</span>
+                        <span class="skill-tag">MATLAB</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">AI Prompting</span>
+                    </div>
+                </div>
+
+                <!-- Hand-On Experiments Glass Card -->
+                <div class="skills-category-card glass-card">
+                    <div class="category-header">
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                            <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+                            <path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"></path>
+                        </svg>
+                        <h3>Hand-On Experiments</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">Structural analysis</span>
+                        <span class="skill-tag">Seismic Design</span>
+                        <span class="skill-tag">Signal processing</span>
+                        <span class="skill-tag">GMPEs Modeling</span>
+                        <span class="skill-tag">Spectra Analysis</span>
+                        <span class="skill-tag">Material Testing (Lab & In-situ)</span>
+                    </div>
+                </div>
+
+                <!-- Tools Glass Card -->
+                <div class="skills-category-card glass-card">
+                    <div class="category-header">
+                        <svg class="category-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <h3>Tools</h3>
+                    </div>
+                    <div class="skills-tags">
+                        <span class="skill-tag">AutoCAD</span>
+                        <span class="skill-tag">ETABS</span>
+                        <span class="skill-tag">SAP2000</span>
+                        <span class="skill-tag">Response2000</span>
+                        <span class="skill-tag">Seismomatch</span>
+                        <span class="skill-tag">XTRACT</span>
+                        <span class="skill-tag">Google Tools</span>
+                        <span class="skill-tag">AI Agents</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2021 - 2024</span>
+                        <h3 class="timeline-role">Laboratory Civil Engineer</h3>
+                        <h4 class="timeline-company">MHPD Co., Ltd: QA/QC, Consultant, Laboratory and Construction.</h4>
+                        <p class="timeline-desc">
+                            Working within strict industry standards like ASTM or ISO and hands-on experience in materials testing, quality control, and forensic analysis. Real-world projects and forms a strong analytical foundation for career growth
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="timeline-date">2024 - Present</span>
+                        <h3 class="timeline-role">Researcher</h3>
+                        <h4 class="timeline-company">Center of Excellence in Earthquake Engineering and Vibration, Chulalongkorn University.</h4>
+                        <p class="timeline-desc">
+                            Conducting research on earthquake engineering and vibration analysis, focusing on developing innovative solutions for seismic retrofitting and structural health monitoring.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <h2 class="section-title">Featured Projects</h2>
+            <!-- Category Filter Tabs -->
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
+                <button class="filter-btn" data-filter="design" id="filter-design">Design</button>
+                <button class="filter-btn" data-filter="fullstack" id="filter-fullstack">Full-Stack</button>
+                <button class="filter-btn" data-filter="creative" id="filter-creative">Creative</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projects-grid">
+                
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-category="fullstack">
+                    <div class="project-image-placeholder">
+                        <svg class="project-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <div class="project-card-glow"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">CloudSync Task Manager</h3>
+                        <p class="project-text">
+                            A real-time Kanban board application with instant drag-and-drop updates, team collaborations, and live activity streams.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Next.js</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">Socket.io</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sow500" target="_blank" class="project-link" aria-label="GitHub Repository">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Project Demo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-category="design">
+                    <div class="project-image-placeholder">
+                        <svg class="project-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                        <div class="project-card-glow"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Cryptosphere Dashboard</h3>
+                        <p class="project-text">
+                            An elegant crypto tracking client displaying real-time coin values, interactive candle charts, and news feeds.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">React.js</span>
+                            <span class="tech-badge">Chart.js</span>
+                            <span class="tech-badge">CoinGecko API</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sow500" target="_blank" class="project-link" aria-label="GitHub Repository">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Project Demo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-category="creative">
+                    <div class="project-image-placeholder">
+                        <svg class="project-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <div class="project-card-glow"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Gravity Canvas Sandbox</h3>
+                        <p class="project-text">
+                            An interactive 2D orbital gravity simulator rendering gravitational pull and orbits of customizable celestial bodies.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">HTML5 Canvas</span>
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">CSS Animations</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/sow500" target="_blank" class="project-link" aria-label="GitHub Repository">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                                </svg>
+                                Code
+                            </a>
+                            <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Project Demo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <!-- Contact info panel -->
+                <div class="contact-info-panel glass-card">
+                    <h3>Contact Information</h3>
+                    <p class="contact-panel-desc">
+                        Have a project in mind, want to discuss a job opening, or just want to say hi? Fill out the form or shoot me an email!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method-item">
+                            <div class="contact-icon-box">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Email Me</span>
+                                <a href="mailto:alex.morgan.dev@example.com" class="contact-link-val">alex.morgan.dev@example.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method-item">
+                            <div class="contact-icon-box">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <span>Call Me</span>
+                                <a href="tel:+14155552671" class="contact-link-val">+1 (415) 555-2671</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form glass card -->
+                <div class="contact-form-container glass-card">
+                    <!-- Web3Forms direct email submission -->
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form">
+                        <!-- Custom settings for Web3Forms -->
+                        <!-- REPLACE "YOUR_ACCESS_KEY_HERE" WITH REAL KEY FOR LIVE USE -->
+                        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+                        <input type="hidden" name="subject" value="New Portfolio Contact Submission">
+                        <input type="checkbox" name="botcheck" id="botcheck" style="display: none;">
+
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" name="name" id="form-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email Address</label>
+                            <input type="email" name="email" id="form-email" placeholder="email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-message">Message</label>
+                            <textarea name="message" id="form-message" rows="5" placeholder="How can I help you?" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                            Send Message
+                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Toast Notification Element -->
+    <div id="toast" class="toast hidden"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Alex Morgan. Built with HTML, CSS, and JS.</p>
+            <div class="footer-socials">
+                <a href="https://github.com/sow500" target="_blank" aria-label="GitHub Link">GitHub</a>
+                <a href="https://www.linkedin.com/in/thin-saw-htoo-b68a9625b" target="_blank" aria-label="LinkedIn Link">LinkedIn</a>
+                <a href="https://www.instagram.com/sowxsor?igsh=azVmd21oZnF3MjJw&utm_source=qr" target="_blank" aria-label="Instagram Link">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main logic link -->
+    <script src="index.js"></script>
+</body>
+</html>

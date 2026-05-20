@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Copy-Item \"C:\\\\Users\\\\Lenovo\\\\.gemini\\\\antigravity\\\\scratch\\\\photo_2026-05-21_00-50-13.jpg\" \"C:\\\\Users\\\\Lenovo\\\\.gemini\\\\antigravity\\\\scratch\\\\premium-portfolio\\\\profile.jpg\")"
+    ]
+  }
+}
