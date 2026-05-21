@@ -26,14 +26,30 @@
     <header class="header">
         <div class="header-container">
             <a href="#hero" class="logo" id="logo-link">
-                <span class="logo-symbol">&lt;</span>
+                <svg class="logo-icon" viewBox="0 0 38 30" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <defs>
+                        <linearGradient id="logo-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#6366f1"/>
+                            <stop offset="100%" stop-color="#d946ef"/>
+                        </linearGradient>
+                    </defs>
+                    <!-- Portal frame: two columns -->
+                    <line x1="6"  y1="27" x2="6"  y2="7"  stroke="url(#logo-grad)" stroke-width="2.5"/>
+                    <line x1="32" y1="27" x2="32" y2="7"  stroke="url(#logo-grad)" stroke-width="2.5"/>
+                    <!-- Beam -->
+                    <line x1="6"  y1="7"  x2="32" y2="7"  stroke="url(#logo-grad)" stroke-width="2.5"/>
+                    <!-- Foundation plates -->
+                    <line x1="2"  y1="27" x2="10" y2="27" stroke="url(#logo-grad)" stroke-width="2"/>
+                    <line x1="28" y1="27" x2="36" y2="27" stroke="url(#logo-grad)" stroke-width="2"/>
+                </svg>
                 <span class="logo-text">Thin.S</span>
-                <span class="logo-symbol">/&gt;</span>
+                <span class="logo-symbol">.STR</span>
             </a>
             <nav class="nav" id="main-navigation">
                 <a href="#about" class="nav-link" id="nav-about">About</a>
                 <a href="#skills" class="nav-link" id="nav-skills">Skills</a>
                 <a href="#experience" class="nav-link" id="nav-experience">Experience</a>
+                <a href="#companies" class="nav-link" id="nav-companies">Brand &amp; Industry</a>
                 <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
                 <a href="#contact" class="nav-link nav-btn" id="nav-contact">Contact</a>
             </nav>
@@ -55,7 +71,7 @@
                     Hi, I'm <span class="highlight">Thin Saw Htoo</span>
                 </h1>
                 <h2 class="hero-subtitle">
-                    My Aim is <span id="typing-text" class="typing-text"></span><span class="cursor">&nbsp;</span>
+                    My aim is <span id="typing-text" class="typing-text"></span><span class="cursor">&nbsp;</span>
                 </h2>
                 <p class="hero-description">
                     A passionate structural engineer focused on crafting visually stunning, high-performance, and user-centric building solutions with modern engineering practices.
@@ -303,49 +319,136 @@
             </div>
         </section>
 
+        <!-- Companies Section -->
+        <section id="companies" class="section companies-section">
+            <h2 class="section-title">Brand &amp; Industry</h2>
+            <p class="companies-subtitle">Organizations and institutions that have shaped my professional journey</p>
+            <div class="companies-grid">
+
+                <!-- MM Hydro Power Development -->
+                <div class="company-browser-card glass-card">
+                    <div class="browser-chrome">
+                        <div class="browser-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="browser-url-bar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            <span>www.mmhydropower.com</span>
+                        </div>
+                        <a href="https://www.mmhydropower.com/" target="_blank" class="browser-open-btn" aria-label="Open in new tab">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                    <div class="browser-viewport">
+                        <iframe src="https://www.mmhydropower.com/" title="MM Hydro Power Development" loading="lazy" sandbox="allow-scripts allow-same-origin"></iframe>
+                        <div class="iframe-overlay"></div>
+                    </div>
+                    <div class="company-card-footer">
+                        <div class="company-card-info">
+                            <span class="company-name">MHPD Co., Ltd</span>
+                            <span class="company-role">Laboratory Civil Engineer &bull; 2021 &ndash; 2024</span>
+                        </div>
+                        <p class="company-desc">MM Hydro Power Development Co., Ltd is a leading engineering firm specializing in hydropower project development, quality assurance, and civil construction across Myanmar and the region. From feasibility studies to on-site material testing, MHPD delivers end-to-end solutions that power communities through sustainable energy infrastructure. Visit <a href="https://www.mmhydropower.com/" target="_blank" class="company-desc-link">www.mmhydropower.com</a>.</p>
+                        <div class="company-tag-row">
+                            <span class="company-tag">QA/QC</span>
+                            <span class="company-tag">Consultant</span>
+                            <span class="company-tag">Laboratory</span>
+                            <span class="company-tag">Construction</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Rugon -->
+                <div class="company-browser-card glass-card">
+                    <div class="browser-chrome">
+                        <div class="browser-dots">
+                            <span class="dot dot-red"></span>
+                            <span class="dot dot-yellow"></span>
+                            <span class="dot dot-green"></span>
+                        </div>
+                        <div class="browser-url-bar">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                            <span>rugon.co</span>
+                        </div>
+                        <a href="https://rugon.co/" target="_blank" class="browser-open-btn" aria-label="Open in new tab">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                        </a>
+                    </div>
+                    <div class="browser-viewport browser-viewport--screenshot">
+                        <img src="Screenshot 2026-05-21 184702.png" alt="Rugon website preview" class="site-screenshot">
+                    </div>
+                    <div class="company-card-footer">
+                        <div class="company-card-info">
+                            <span class="company-name">Rugon Co.</span>
+                            <span class="company-role">rugon.co</span>
+                        </div>
+                        <p class="company-desc">RUGON รู้ก่อน: Plug-and-play earthquake early warning and monitoring device. You can order now at <a href="https://rugon.co/" target="_blank" class="company-desc-link">website</a>.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
         <!-- Projects Section -->
         <section id="projects" class="section projects-section">
             <h2 class="section-title">Featured Projects</h2>
             <!-- Category Filter Tabs -->
             <div class="projects-filter">
-                <button class="filter-btn active" data-filter="all" id="filter-all">All</button>
-                <button class="filter-btn" data-filter="design" id="filter-design">Design</button>
-                <button class="filter-btn" data-filter="fullstack" id="filter-fullstack">Full-Stack</button>
-                <button class="filter-btn" data-filter="creative" id="filter-creative">Creative</button>
+                <button class="filter-btn active" data-filter="all" id="filter-all">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect>
+                        <rect x="3" y="14" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect>
+                    </svg>
+                    All
+                </button>
+                <button class="filter-btn" data-filter="seismic-analysis" id="filter-seismic-analysis">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="2 12 5 12 7 4 9 20 11 10 13 14 15 12 17 12 19 8 21 12 22 12"></polyline>
+                    </svg>
+                    Seismic Analysis
+                </button>
+                <button class="filter-btn" data-filter="design" id="filter-design">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 20h9"></path>
+                        <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                    </svg>
+                    Design
+                </button>
+                <button class="filter-btn" data-filter="construction" id="filter-construction">
+                    <svg class="filter-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M2 20h20"></path>
+                        <path d="M5 20V10l7-7 7 7v10"></path>
+                        <path d="M9 20v-5h6v5"></path>
+                    </svg>
+                    Construction
+                </button>
             </div>
 
             <!-- Projects Grid -->
             <div class="projects-grid" id="projects-grid">
                 
                 <!-- Project 1 -->
-                <div class="project-card glass-card" data-category="fullstack">
+                <div class="project-card glass-card" data-category="seismic-analysis">
                     <div class="project-image-placeholder">
-                        <svg class="project-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                        <div class="project-card-glow"></div>
+                        <img src="Project1.png" alt="Project 1" class="project-img">
+                        <div class="project-img-dim"></div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">CloudSync Task Manager</h3>
+                        <h3 class="project-title">Signal Processing (Monitoring)</h3>
                         <p class="project-text">
-                            A real-time Kanban board application with instant drag-and-drop updates, team collaborations, and live activity streams.
+                            Butterworth 4th order bandpass filter. Baseline correction: subtract mean acceleration to center waveform at zero. Zero-phase filtering to eliminate phase distortion
                         </p>
                         <div class="project-tech-stack">
-                            <span class="tech-badge">Next.js</span>
-                            <span class="tech-badge">Node.js</span>
-                            <span class="tech-badge">Socket.io</span>
-                            <span class="tech-badge">MongoDB</span>
+                            <span class="tech-badge">MATLAB</span>
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">CMT Catalog</span>
+                            <span class="tech-badge">USGS</span>
+                            <span class="tech-badge">QGIS</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/sow500" target="_blank" class="project-link" aria-label="GitHub Repository">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                                Code
-                            </a>
-                            <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Project Demo">
+                            <a href="https://drive.google.com/drive/folders/1lWzQ3rCsCjW47JLQtBOA6vhUVEtz9KbO?usp=sharing" target="_blank" class="project-link" aria-label="Live Project Demo">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
@@ -357,34 +460,54 @@
                     </div>
                 </div>
 
+                <!-- Project 4 (Seismic Analysis) -->
+                <div class="project-card glass-card" data-category="seismic-analysis">
+                    <div class="project-image-placeholder">
+                        <img src="Project4.png" alt="Ground Motion Analysis" class="project-img">
+                        <div class="project-img-dim"></div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Ground Motion Attenuation Study</h3>
+                        <p class="project-text">
+                            Developed site-specific GMPEs for shallow crustal earthquakes using regression analysis on strong-motion records from the Thai seismic network.
+                        </p>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">MATLAB</span>
+                            <span class="tech-badge">Seismomatch</span>
+                            <span class="tech-badge">GMPEs</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/drive/folders/1Bwv5-CQVOn4c3Mw6Y0WCLsUjPvY8On49?usp=sharing" target="_blank" class="project-link" aria-label="Live Project Demo">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                    <polyline points="15 3 21 3 21 9"></polyline>
+                                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                                </svg>
+                                Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Project 2 -->
                 <div class="project-card glass-card" data-category="design">
                     <div class="project-image-placeholder">
-                        <svg class="project-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <line x1="18" y1="20" x2="18" y2="10"></line>
-                            <line x1="12" y1="20" x2="12" y2="4"></line>
-                            <line x1="6" y1="20" x2="6" y2="14"></line>
-                        </svg>
-                        <div class="project-card-glow"></div>
+                        <img src="Project2.png" alt="Project 2" class="project-img">
+                        <div class="project-img-dim"></div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Cryptosphere Dashboard</h3>
+                        <h3 class="project-title">Seismic Design</h3>
                         <p class="project-text">
-                            An elegant crypto tracking client displaying real-time coin values, interactive candle charts, and news feeds.
+                            Performed nonlinear structural analysis and seismic design of reinforced concrete frames, evaluating section capacity, moment-curvature response, and inter-story drift under earthquake loading.
                         </p>
                         <div class="project-tech-stack">
-                            <span class="tech-badge">React.js</span>
-                            <span class="tech-badge">Chart.js</span>
-                            <span class="tech-badge">CoinGecko API</span>
+                            <span class="tech-badge">ETABS</span>
+                            <span class="tech-badge">SAP2000</span>
+                            <span class="tech-badge">Response2000</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/sow500" target="_blank" class="project-link" aria-label="GitHub Repository">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                                Code
-                            </a>
-                            <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Project Demo">
+                            <a href="https://drive.google.com/drive/folders/1vF_QJranJS-AFee68BFBZPC4OUADEZSP?usp=sharing" target="_blank" class="project-link" aria-label="Live Project Demo">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
@@ -397,33 +520,23 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="project-card glass-card" data-category="creative">
+                <div class="project-card glass-card" data-category="construction">
                     <div class="project-image-placeholder">
-                        <svg class="project-visual-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10"></circle>
-                            <circle cx="12" cy="12" r="6"></circle>
-                            <circle cx="12" cy="12" r="2"></circle>
-                        </svg>
-                        <div class="project-card-glow"></div>
+                        <img src="Project3.jpg" alt="Project 3" class="project-img">
+                        <div class="project-img-dim"></div>
                     </div>
                     <div class="project-info">
-                        <h3 class="project-title">Gravity Canvas Sandbox</h3>
+                        <h3 class="project-title">Workflow Management and Lab</h3>
                         <p class="project-text">
-                            An interactive 2D orbital gravity simulator rendering gravitational pull and orbits of customizable celestial bodies.
+                            Streamlined QA/QC documentation and laboratory reporting workflows using automated spreadsheets and data pipelines, reducing manual entry time and improving traceability across construction site operations.
                         </p>
                         <div class="project-tech-stack">
-                            <span class="tech-badge">HTML5 Canvas</span>
-                            <span class="tech-badge">JavaScript</span>
-                            <span class="tech-badge">CSS Animations</span>
+                            <span class="tech-badge">Microsoft Office</span>
+                            <span class="tech-badge">Google Tools</span>
+                            <span class="tech-badge">Automation</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/sow500" target="_blank" class="project-link" aria-label="GitHub Repository">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                                Code
-                            </a>
-                            <a href="https://example.com" target="_blank" class="project-link" aria-label="Live Project Demo">
+                            <a href="https://drive.google.com/drive/folders/1WihL1JoGAoVLBqNe6rmZ4UrgssqxsPLx?usp=sharing" target="_blank" class="project-link" aria-label="Live Project Demo">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                                     <polyline points="15 3 21 3 21 9"></polyline>
@@ -457,7 +570,7 @@
                             </div>
                             <div>
                                 <span>Email Me</span>
-                                <a href="mailto:alex.morgan.dev@example.com" class="contact-link-val">alex.morgan.dev@example.com</a>
+                                <a href="mailto:thinsawhtoo@gmail.com" class="contact-link-val">thinsawhtoo@gmail.com</a>
                             </div>
                         </div>
                         <div class="contact-method-item">
@@ -468,7 +581,7 @@
                             </div>
                             <div>
                                 <span>Call Me</span>
-                                <a href="tel:+14155552671" class="contact-link-val">+1 (415) 555-2671</a>
+                                <a href="tel:+66994926331" class="contact-link-val">+66 99 492 6331</a>
                             </div>
                         </div>
                     </div>
@@ -516,7 +629,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
-            <p>&copy; 2026 Alex Morgan. Built with HTML, CSS, and JS.</p>
+            <p>&copy; 2026 Thin Saw Htoo. Built with HTML, CSS, and JS.</p>
             <div class="footer-socials">
                 <a href="https://github.com/sow500" target="_blank" aria-label="GitHub Link">GitHub</a>
                 <a href="https://www.linkedin.com/in/thin-saw-htoo-b68a9625b" target="_blank" aria-label="LinkedIn Link">LinkedIn</a>

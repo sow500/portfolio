@@ -266,10 +266,20 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.logo-icon {
+    width: 32px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
 .logo-symbol {
-    color: var(--secondary);
-    font-weight: 400;
-    padding: 0 4px;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    letter-spacing: 0.05em;
+    align-self: flex-end;
+    padding-bottom: 2px;
 }
 
 .nav {
@@ -877,6 +887,218 @@ body {
 }
 
 /* ==========================================================================
+   Companies Section
+   ========================================================================== */
+.companies-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    margin-top: -30px;
+    margin-bottom: 48px;
+}
+
+.companies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+    gap: 32px;
+    justify-items: center;
+}
+
+/* Browser window card */
+.company-browser-card {
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Browser chrome bar */
+.browser-chrome {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.04);
+    border-bottom: 1px solid var(--glass-border);
+    flex-shrink: 0;
+}
+
+.browser-dots {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.dot-red    { background: #ff5f57; }
+.dot-yellow { background: #febc2e; }
+.dot-green  { background: #28c840; }
+
+.browser-url-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius-sm);
+    padding: 5px 12px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.browser-url-bar svg {
+    width: 13px;
+    height: 13px;
+    flex-shrink: 0;
+    color: var(--accent);
+}
+
+.browser-open-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    transition: var(--transition-smooth);
+    flex-shrink: 0;
+}
+
+.browser-open-btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.browser-open-btn:hover {
+    color: var(--primary);
+}
+
+/* iframe viewport */
+.browser-viewport {
+    position: relative;
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    background: #0a0f1e;
+}
+
+.browser-viewport iframe {
+    width: 200%;
+    height: 200%;
+    border: none;
+    transform: scale(0.5);
+    transform-origin: top left;
+    pointer-events: none;
+}
+
+/* Transparent overlay blocks clicks on iframe, keeping the card interactive */
+.iframe-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    cursor: default;
+}
+
+/* Screenshot fallback variant */
+.browser-viewport--screenshot {
+    height: 340px;
+    overflow: hidden;
+}
+
+.site-screenshot {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.company-browser-card:hover .site-screenshot {
+    transform: scale(1.03);
+}
+
+/* Card footer with company info */
+.company-card-footer {
+    padding: 20px 24px;
+    border-top: 1px solid var(--glass-border);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.company-card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.company-name {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.company-role {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.company-desc {
+    color: var(--text-secondary);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+
+.company-desc-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+    transition: var(--transition-smooth);
+}
+
+.company-desc-link:hover {
+    color: var(--text-primary);
+}
+
+.company-tag-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.company-tag {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+    .companies-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .browser-viewport {
+        height: 240px;
+    }
+}
+
+/* ==========================================================================
    Projects Section
    ========================================================================== */
 .projects-filter {
@@ -887,6 +1109,9 @@ body {
 }
 
 .filter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid var(--glass-border);
     color: var(--text-secondary);
@@ -897,6 +1122,12 @@ body {
     font-size: 0.9rem;
     cursor: pointer;
     transition: var(--transition-smooth);
+}
+
+.filter-icon {
+    width: 15px;
+    height: 15px;
+    flex-shrink: 0;
 }
 
 .filter-btn:hover {
@@ -936,6 +1167,37 @@ body {
     overflow: hidden;
 }
 
+.project-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-img {
+    transform: scale(1.05);
+}
+
+.project-img-dim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        160deg,
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(10, 10, 30, 0.35) 50%,
+        rgba(0, 0, 0, 0.65) 100%
+    );
+    z-index: 1;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+.project-card:hover .project-img-dim {
+    opacity: 0.7;
+}
+
 .project-visual-icon {
     width: 60px;
     height: 60px;
@@ -949,22 +1211,6 @@ body {
     transform: scale(1.1);
 }
 
-.project-card-glow {
-    position: absolute;
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    background: radial-gradient(circle, var(--primary-glow) 0%, transparent 70%);
-    filter: blur(20px);
-    z-index: 1;
-    transition: var(--transition-smooth);
-}
-
-.project-card:hover .project-card-glow {
-    background: radial-gradient(circle, rgba(6, 182, 212, 0.25) 0%, transparent 70%);
-    width: 180px;
-    height: 180px;
-}
 
 .project-info {
     padding: 28px;
