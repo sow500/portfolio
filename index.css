@@ -41,7 +41,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 body {
@@ -243,7 +243,7 @@ body {
 }
 
 .header-container {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 20px 24px;
     display: flex;
@@ -361,7 +361,7 @@ body {
    ========================================================================== */
 .section {
     padding: 100px 24px;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -395,10 +395,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
-    padding: 120px 24px 60px 24px;
-    gap: 48px;
+    padding: 80px 24px;
+    gap: 60px;
 }
 
 .hero-content {
@@ -423,25 +423,26 @@ body {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 3.8rem;
+    font-size: 4.4rem;
     font-weight: 800;
     line-height: 1.1;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .highlight {
     background: linear-gradient(135deg, #a5b4fc, var(--primary), var(--secondary));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    white-space: nowrap;
 }
 
 .hero-subtitle {
     font-family: var(--font-heading);
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 600;
     margin-bottom: 24px;
     color: var(--text-primary);
-    height: 48px; /* Prevents layout shifting during typing */
+    height: 58px;
 }
 
 .typing-text {
@@ -485,7 +486,7 @@ body {
 .profile-card {
     position: relative;
     width: 100%;
-    max-width: 340px;
+    max-width: 460px;
     padding: 3px;
     border-radius: var(--border-radius-lg);
     background: linear-gradient(135deg, var(--glass-border), transparent, var(--glass-border));
@@ -519,7 +520,7 @@ body {
     z-index: 2;
     background: #090e1c;
     border-radius: calc(var(--border-radius-lg) - 2px);
-    padding: 40px 30px;
+    padding: 50px 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -527,10 +528,12 @@ body {
 }
 
 .profile-avatar {
-    width: 130px;
-    height: 130px;
-    margin-bottom: 24px;
+    width: 190px;
+    height: 190px;
+    margin-bottom: 28px;
     position: relative;
+    border-radius: 50%;
+    overflow: hidden;
 }
 
 .avatar-svg {
