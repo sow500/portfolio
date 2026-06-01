@@ -391,7 +391,7 @@ body {
    Hero Section
    ========================================================================== */
 .hero-section {
-    min-height: 100vh;
+    min-height: unset;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
