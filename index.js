@@ -377,4 +377,40 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
+
+    /* ==========================================================================
+       Certificate Lightbox
+       ========================================================================== */
+    const lightbox     = document.getElementById('cert-lightbox');
+    const lightboxImg  = document.getElementById('cert-lightbox-img');
+    const lightboxCap  = document.getElementById('cert-lightbox-caption');
+    const lightboxClose = lightbox ? lightbox.querySelector('.cert-lightbox-close') : null;
+    const lightboxBack  = lightbox ? lightbox.querySelector('.cert-lightbox-backdrop') : null;
+
+    function openLightbox(src, label) {
+        lightboxImg.src = src;
+        lightboxImg.alt = label;
+        lightboxCap.textContent = label;
+        lightbox.classList.add('is-open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+        lightbox.classList.remove('is-open');
+        document.body.style.overflow = '';
+    }
+
+    document.querySelectorAll('.cert-card[data-cert-img]').forEach(card => {
+        card.style.cursor = 'pointer';
+        card.addEventListener('click', () => {
+            openLightbox(card.dataset.certImg, card.dataset.certLabel);
+        });
+    });
+
+    if (lightboxClose) lightboxClose.addEventListener('click', closeLightbox);
+    if (lightboxBack)  lightboxBack.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape') closeLightbox();
+    });
 });
