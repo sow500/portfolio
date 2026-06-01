@@ -1300,6 +1300,7 @@ body {
     color: var(--accent);
 }
 
+
 @media screen and (max-width: 768px) {
     .companies-grid {
         grid-template-columns: 1fr;
