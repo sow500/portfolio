@@ -360,16 +360,16 @@ body {
    Sections - Common
    ========================================================================== */
 .section {
-    padding: 64px 24px;
+    padding: 48px 24px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .section-title {
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: 1.75rem;
     font-weight: 800;
-    margin-bottom: 32px;
+    margin-bottom: 24px;
     text-align: center;
     position: relative;
     background: linear-gradient(135deg, var(--text-primary) 50%, var(--text-secondary));
@@ -774,14 +774,14 @@ body {
 
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 16px;
 }
 
 .cert-card {
     display: flex;
     flex-direction: column;
-    padding: 24px;
+    padding: 16px;
     border-radius: 12px;
     transition: var(--transition-smooth);
     cursor: default;
@@ -936,20 +936,20 @@ body {
 
 .cert-title {
     font-family: var(--font-heading);
-    font-size: 0.97rem;
+    font-size: 0.88rem;
     font-weight: 600;
     color: var(--text-primary);
     line-height: 1.4;
 }
 
 .cert-issuer {
-    font-size: 0.86rem;
+    font-size: 0.78rem;
     color: var(--text-secondary);
     line-height: 1.5;
 }
 
 .cert-date {
-    font-size: 0.8rem;
+    font-size: 0.72rem;
     color: rgba(255,255,255,0.35);
     margin-top: 2px;
 }
@@ -1353,8 +1353,8 @@ body {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 20px;
 }
 
 .project-card {
@@ -1421,7 +1421,7 @@ body {
 
 
 .project-info {
-    padding: 28px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
@@ -1429,15 +1429,15 @@ body {
 
 .project-title {
     font-family: var(--font-heading);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .project-text {
     color: var(--text-secondary);
-    font-size: 0.95rem;
-    margin-bottom: 20px;
+    font-size: 0.88rem;
+    margin-bottom: 14px;
     line-height: 1.5;
     flex-grow: 1;
 }
