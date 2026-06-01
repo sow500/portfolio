@@ -393,11 +393,11 @@ body {
 .hero-section {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     max-width: 1300px;
     margin: 0 auto;
-    padding: 80px 24px;
+    padding: 130px 24px 80px;
     gap: 60px;
 }
 
